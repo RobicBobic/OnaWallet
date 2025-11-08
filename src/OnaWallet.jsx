@@ -2,14 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './OnaWallet.css';
 
 // Simple icon components (since we can't use lucide-react without npm)
-const WalletIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/>
-    <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/>
-    <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
-  </svg>
-);
-
 const TwitterIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
@@ -557,19 +549,19 @@ export default function OnaWallet() {
             <div className="footer-col">
               <h4 className="footer-heading">Company</h4>
               <div className="footer-links">
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact</a>
+                <button onClick={() => {}}>About</button>
+                <button onClick={() => {}}>Blog</button>
+                <button onClick={() => {}}>Careers</button>
+                <button onClick={() => {}}>Contact</button>
               </div>
             </div>
             
             <div className="footer-col">
               <h4 className="footer-heading">Legal</h4>
               <div className="footer-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Security</a>
+                <button onClick={() => {}}>Privacy</button>
+                <button onClick={() => {}}>Terms</button>
+                <button onClick={() => {}}>Security</button>
               </div>
             </div>
           </div>
@@ -713,27 +705,27 @@ export default function OnaWallet() {
                 
                 <div className="feature-modal-details">
                   <div className="feature-detail">
-                    <h4> Lightning Network Integration</h4>
+                    <h4>⚡ Lightning Network Integration</h4>
                     <p>Send and receive payments in under 2 seconds using Layer 2 Lightning Network technology with near-zero fees.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Cross-Chain Swaps</h4>
+                    <h4>🌐 Cross-Chain Swaps</h4>
                     <p>Instantly swap between different cryptocurrencies without leaving the app. No external exchanges needed.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Real-Time Confirmation</h4>
+                    <h4>📊 Real-Time Confirmation</h4>
                     <p>Watch your transactions confirm in real-time with live blockchain tracking and instant notifications.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Smart Fee Optimization</h4>
+                    <h4>💸 Smart Fee Optimization</h4>
                     <p>Our AI automatically selects the optimal transaction fee to ensure fast confirmation at the lowest cost.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Batch Transactions</h4>
+                    <h4>🔄 Batch Transactions</h4>
                     <p>Save on fees by combining multiple transfers into a single transaction with our batch processing feature.</p>
                   </div>
                 </div>
@@ -755,27 +747,27 @@ export default function OnaWallet() {
                 
                 <div className="feature-modal-details">
                   <div className="feature-detail">
-                    <h4> 100+ Cryptocurrencies</h4>
+                    <h4>💰 100+ Cryptocurrencies</h4>
                     <p>Support for Bitcoin, Ethereum, Solana, and over 100 other major cryptocurrencies and tokens.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Fiat Integration</h4>
+                    <h4>💵 Fiat Integration</h4>
                     <p>Buy, sell, and hold traditional currencies like USD, EUR, GBP alongside your crypto assets.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> NFT Gallery</h4>
+                    <h4>🎨 NFT Gallery</h4>
                     <p>Store, view, and manage your NFT collection across multiple blockchains all in one place.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4>Custom Token Support</h4>
+                    <h4>🪙 Custom Token Support</h4>
                     <p>Add any ERC-20, BEP-20, or SPL token to your wallet with just the contract address.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Live Exchange Rates</h4>
+                    <h4>💱 Live Exchange Rates</h4>
                     <p>Real-time conversion rates for all your assets with automatic portfolio valuation in your preferred currency.</p>
                   </div>
                 </div>
@@ -797,32 +789,32 @@ export default function OnaWallet() {
                 
                 <div className="feature-modal-details">
                   <div className="feature-detail">
-                    <h4> Portfolio Tracking</h4>
+                    <h4>📈 Portfolio Tracking</h4>
                     <p>Monitor your entire portfolio's performance with detailed charts, graphs, and historical data analysis.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> AI-Powered Insights</h4>
+                    <h4>🤖 AI-Powered Insights</h4>
                     <p>Get personalized recommendations and insights based on your spending patterns and market trends.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Spending Analysis</h4>
+                    <h4>💡 Spending Analysis</h4>
                     <p>Understand where your money goes with automatic categorization and beautiful visual breakdowns.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Tax Reporting</h4>
+                    <h4>📊 Tax Reporting</h4>
                     <p>Automatically generate tax reports for your crypto transactions with support for multiple jurisdictions.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Goal Setting</h4>
+                    <h4>🎯 Goal Setting</h4>
                     <p>Set savings goals and investment targets with progress tracking and smart recommendations to reach them faster.</p>
                   </div>
                   
                   <div className="feature-detail">
-                    <h4> Custom Alerts</h4>
+                    <h4>📱 Custom Alerts</h4>
                     <p>Create price alerts, balance notifications, and transaction reminders tailored to your needs.</p>
                   </div>
                 </div>
